@@ -1,18 +1,22 @@
 {
-  "name": "nav",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bluebird": "^3.7.2"
-  },
-  "devDependencies": {
-    "cssnano": "^4.1.10"
-  }
+    "name": "nav",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "cl1996 <1430125208@qq.com>",
+    "license": "ISC",
+    "dependencies": {
+        "bluebird": "^3.7.2"
+    },
+    "scripts": {
+        "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10"
+    },
+    "repository": "git@github.com:clang1996/nav.git"
 }
