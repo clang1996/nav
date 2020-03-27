@@ -1,4 +1,4 @@
-/*css reset*/
+/*css ret*/
 
 * {
     box-sizing: border-box;
@@ -40,9 +40,24 @@ body {
     margin: 20px;
 }
 
+@media (min-width: 500px) {
+    .globalHeader {
+        margin: 125px 0 100px;
+    }
+}
+
 .search {
     display: flex;
     justify-content: space-between;
+    /* margin-top: 60px; */
+}
+
+@media (min-width:500px) {
+    .search {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .search>input {
@@ -59,11 +74,15 @@ body {
     padding: 0 23px;
     border: none;
     border-radius: 4px;
-    font-size: 28.86px;
+    font-size: 20px;
     background-color: #f60;
 }
 
-.globalMain {}
+.globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .siteList {
     display: flex;
@@ -72,10 +91,27 @@ body {
     justify-content: space-between;
 }
 
-.siteList>li {}
+@media(min-width:500px) {
+    .siteList {
+        margin-left: 0;
+        margin-top: 60px;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+}
+
+.siteList>li {
+    margin-bottom: 10px;
+}
+
+@media(min-width: 500px) {
+    .siteList>li {
+        margin-right: 25px;
+    }
+}
 
 .siteList .site {
-    width: 162px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +121,8 @@ body {
     padding-bottom: 19px;
     background-color: #fff;
     border-radius: 4px;
+    position: relative;
+    cursor: pointer;
 }
 
 .siteList .site>.logo {
@@ -94,6 +132,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .siteList .site>.link {
@@ -101,8 +140,24 @@ body {
     margin-top: 24px;
 }
 
+.siteList .site>.close {
+    font-size: 20px;
+    margin-top: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+    display: none;
+}
+
+.siteList .site:hover>.close {
+    display: block;
+}
+
+@media(min-width:500px) {}
+
 .siteList .addButton {
-    width: 162px;
+    width: 160px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -125,4 +180,4 @@ body {
     margin-top: 24px;
 }
 
-/*# sourceMappingURL=/style.e308ff8e.css.map */
+/*# sourceMappingURL=style.ef9d229a.css.map */
