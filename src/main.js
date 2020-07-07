@@ -6,7 +6,7 @@ const hashMap = xObject || [
     { logo: 'B', url: 'https://www.bilibili.com' },
     { logo: 'Z', url: 'https://www.zhihu.com' },
 ];
-
+//简化url
 const simplifyUrl = (url) => {
     return url.replace('https://', '')
         .replace('http://', '')
@@ -14,7 +14,7 @@ const simplifyUrl = (url) => {
         .replace(/\/.*/, '')
 }
 const render = () => {
-    $siteList.find('li:not(.last').remove()
+    $siteList.find('li:not(.last)').remove()
     hashMap.forEach((node, index) => {
         const $li = $(`<li>   
     <div class="site">
