@@ -6,17 +6,24 @@
 
 *{padding:0;margin:0;}
 
+input{overflow:visible;vertical-align:middle;outline:none}
+
 ul, ol{list-style:none;}
 
 a{color:inherit;text-decoration:none;}
 
 img{max-width:100%;max-height:100%;}
 
-body{background-color:#ccc;}
+body{
+	background:#ccc url(./images/piano_keys-music_fashion_Desktop_Wallpaper_2560x1600.jpg) no-repeat;
+	background-size: cover;
+	}
 
 .globalHeader{margin:20px;}
 
-@media (min-width:500px){  .globalHeader{margin:125px 0 0 100px;}  }
+@media (min-width:500px){
+	.globalHeader{margin:160px 0 0 100px;}
+	}
 
 .search{
 	display:flex;
@@ -37,8 +44,16 @@ body{background-color:#ccc;}
 	margin-right:10px;
 	height:38px;
 	border:none;
-	padding:0 20px;
+	padding:0 28px;
 	border-radius:2px;
+	}
+
+.search > img{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:8px;
+	margin-left:4px;
 	}
 
 .search > button{
@@ -140,7 +155,6 @@ body{background-color:#ccc;}
 	margin-bottom:9px;
 	padding-top:24px;
 	padding-bottom:19px;
-	background-color:#fff;
 	border-radius:4px;
 	}
 
