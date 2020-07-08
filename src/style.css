@@ -22,10 +22,13 @@ body{
 .globalHeader{margin:20px;}
 
 @media (min-width:500px){
-	.globalHeader{margin:160px 0 0 100px;}
+	.globalHeader{
+		
+		margin:160px 44px 0 10px;}
 	}
 
 .search{
+	
 	display:flex;
 	justify-content:space-between;
 	/* margin-top: 60px; */
@@ -67,7 +70,7 @@ body{
 	}
 
 .globalMain{
-	max-width:900px;
+	max-width:1200px;
 	margin-left:auto;
 	margin-right:auto;
 	}
@@ -75,15 +78,15 @@ body{
 .siteList{
 	display:flex;
 	flex-wrap:wrap;
-	margin:20px;
+	margin:20px 20px 30px 30px;
 	justify-content:space-between;
 	}
 
 @media (min-width:500px){
 	.siteList{
-		margin-left:0;
+		margin-left:120px;
 		margin-top:60px;
-		margin-right:-25px;
+		margin-right:-50px;
 		justify-content:flex-start;
 		}
 	}
@@ -94,19 +97,20 @@ body{
 
 @media (min-width:500px){
 	.siteList > li{
-		margin-right:25px;
+		margin-right:50px;
 		}
 	}
 
 .siteList .site{
-	width:160px;
+	width:50px;
+	height:50px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
 	margin-bottom:9px;
-	padding-top:24px;
 	padding-bottom:19px;
+	padding-left:10px;
 	background-color:#fff;
 	border-radius:4px;
 	position:relative;
@@ -114,19 +118,19 @@ body{
 	}
 
 .siteList .site > .logo{
-	width:66px;
-	height:66px;
-	font-size:86px;
+	
+	font-size:20px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	text-transform:uppercase;
+	margin-left:-40px;
 	}
 
-.siteList .site > .link{
-	font-size:20px;
-	margin-top:24px;
-	}
+/*.siteList .site > .link{*/
+/*	font-size:20px;*/
+/*	!*margin-top:24px;*!*/
+/*	}*/
 
 .siteList .site > .close{
 	font-size:20px;
@@ -146,24 +150,21 @@ body{
 	}
 
 .siteList .addButton{
-	width:160px;
+	width:50px;
+	height:50px;
 	background-color:#fff;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
 	margin-bottom:9px;
-	padding-top:24px;
-	padding-bottom:19px;
+	padding-bottom:10px;
 	border-radius:4px;
 	}
 
 .siteList .addButton .icon{
-	width:68px;
-	height:68px;
+	width:50px;
+	height:50px;
+	margin-top:10px;
 	}
 
-.siteList .addButton .add{
-	font-size:20px;
-	margin-top:24px;
-	}

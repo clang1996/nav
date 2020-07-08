@@ -16,10 +16,9 @@ const simplifyUrl = (url) => {
 const render = () => {
     $siteList.find('li:not(.last)').remove()
     hashMap.forEach((node, index) => {
-        const $li = $(`<li>   
+        const $li = $(`<li>
     <div class="site">
         <div class="logo">${node.logo[0]}</div>
-        <div class="link">${simplifyUrl(node.url)}</div>
         <div class="close">
         <svg class="icon">
         <use xlink:href="#icon-close"></use>
