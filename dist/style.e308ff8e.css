@@ -1,0 +1,173 @@
+/*css ret*/
+*{box-sizing:border-box;}
+
+*::before,
+*::after{box-sizing:border-box;}
+
+*{padding:0;margin:0;}
+
+input{overflow:visible;vertical-align:middle;outline:none}
+
+ul, ol{list-style:none;}
+
+a{color:inherit;text-decoration:none;}
+
+img{max-width:100%;max-height:100%;}
+
+body{
+	background:#ccc url(/piano_keys-music_fashion_Desktop_Wallpaper_2560x1600.c0aac64f.jpg) no-repeat;
+	background-size: cover;
+	}
+
+.globalHeader{margin:20px;}
+
+@media (min-width:500px){
+	.globalHeader{
+		
+		margin:160px 44px 0 10px;}
+	}
+
+.search{
+	
+	display:flex;
+	justify-content:space-between;
+	/* margin-top: 60px; */
+	}
+
+@media (min-width:500px){
+	.search{
+		max-width:600px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+	}
+
+.search > input{
+	width:100%;
+	margin-right:10px;
+	height:38px;
+	border:none;
+	padding:0 28px;
+	border-radius:2px;
+	}
+
+.search > img{
+	position:absolute;
+	width:20px;
+	height:20px;
+	margin-top:8px;
+	margin-left:4px;
+	}
+
+.search > button{
+	white-space:nowrap;
+	padding:0 23px;
+	border:none;
+	border-radius:2px;
+	color:#ffffff;
+	font-size:14px;
+	background-color:#3781f0;
+	}
+
+.globalMain{
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.siteList{
+	display:flex;
+	flex-wrap:wrap;
+	margin:20px 20px 30px 30px;
+	justify-content:space-between;
+	}
+
+@media (min-width:500px){
+	.siteList{
+		margin-left:120px;
+		margin-top:60px;
+		margin-right:-50px;
+		justify-content:flex-start;
+		}
+	}
+
+.siteList > li{
+	margin-bottom:10px;
+	}
+
+@media (min-width:500px){
+	.siteList > li{
+		margin-right:50px;
+		}
+	}
+
+.siteList .site{
+	width:50px;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	margin-bottom:9px;
+	padding-bottom:19px;
+	padding-left:10px;
+	background-color:#fff;
+	border-radius:4px;
+	position:relative;
+	cursor:pointer;
+	}
+
+.siteList .site > .logo{
+	
+	font-size:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-transform:uppercase;
+	margin-left:-40px;
+	}
+
+/*.siteList .site > .link{*/
+/*	font-size:20px;*/
+/*	!*margin-top:24px;*!*/
+/*	}*/
+
+.siteList .site > .close{
+	font-size:20px;
+	margin-top:24px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	cursor:default;
+	display:none;
+	}
+
+.siteList .site:hover > .close{
+	display:block;
+	}
+
+@media (min-width:500px){
+	}
+
+.siteList .addButton{
+	width:50px;
+	height:50px;
+	background-color:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	margin-bottom:9px;
+	padding-bottom:10px;
+	border-radius:4px;
+	}
+
+.siteList .addButton .icon{
+	width:50px;
+	height:50px;
+	margin-top:10px;
+	}
+
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
